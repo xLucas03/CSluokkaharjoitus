@@ -13,7 +13,8 @@ namespace LuokkaHarjoitus1
         int age = 30;
         string gender = "Emäntä";
 
-        // Constructor with 
+        // Default constructor w/o arguments
+        // No need to define, will be created automatically 
 
         Hooman()
         { 
@@ -44,11 +45,26 @@ namespace LuokkaHarjoitus1
 
         }
 
+        // A method to say something
+        public void SayOpinion()
+        {
+            Console.WriteLine("Voi lemmikit ne on elämän suola");
+        }
+
     }
     internal class Program
     {
         static void Main(string[] args)
         {
+            // Create (instantiate) a hooman object from Hooman class
+            Hooman owner = new Hooman("Ossi omistaja", 35, "isäntä");
+
+            // Call the SayOpinion method
+            owner.SayOpinion();
+
+            // Keep the window open until enter press
+
+            Console.ReadLine();
         }
     }
 }
