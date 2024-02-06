@@ -9,8 +9,8 @@ namespace LuokkaHarjoitus1
     class Hooman
     {
         // Define properties of hooman ie. fields
-        string name = "Essi esimerkki";
-        int age = 30;
+        public string name = "Essi esimerkki";
+        public int age = 30;
         string gender = "Emäntä";
 
         // Default constructor w/o arguments
@@ -63,6 +63,9 @@ namespace LuokkaHarjoitus1
             owner.SayOpinion();
 
             // Keep the window open until enter press
+
+            string who = owner.name;
+            Console.WriteLine("totesi" + who);
 
             Console.ReadLine();
         }
