@@ -37,7 +37,7 @@ namespace LuokkaHarjoitus1
 
         // Constructor with 3 arguments
 
-        Hooman(string name, int age, string gender)
+        public Hooman(string name, int age, string gender)
         {
             this.name = name;
             this.age = age;
@@ -65,7 +65,7 @@ namespace LuokkaHarjoitus1
             // Keep the window open until enter press
 
             string who = owner.name;
-            Console.WriteLine("totesi" + who);
+            Console.WriteLine("totesi " + who);
 
             Console.ReadLine();
         }
