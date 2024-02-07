@@ -7,29 +7,30 @@ using System.Threading.Tasks;
 namespace LuokkaHarjoitus1
 {
     class Hooman
+
     {
         // Define properties of hooman ie. fields
         public string name = "Essi esimerkki";
         public int age = 30;
-        string gender = "Emäntä";
+        public string gender = "Emäntä";
 
         // Default constructor w/o arguments
         // No need to define, will be created automatically 
 
-        Hooman()
+        public Hooman()
         { 
             
         }
 
         // Constructor with one argument
-        Hooman(string name)
+        public Hooman(string name)
         {
             this.name = name;
         }
 
         // Constructor with 2 arguments
 
-        Hooman(string name, int age)
+        public Hooman(string name, int age)
         {
             this.name = name;
             this.age = age;
@@ -52,6 +53,22 @@ namespace LuokkaHarjoitus1
         }
 
     }
+
+    class CatOwner : Hooman
+    {
+        public new void SayOpinion()
+        { Console.WriteLine("Kissat ovat itsenäisiä ja pitävät hiiret loitolla.");
+        }
+    }
+
+    class DogOwner : Hooman
+    {
+        public new void SayOpinion()
+        {
+            Console.WriteLine("Koirat ovat ihmisen parhaita ystäviä.");
+        }
+    }
+
     internal class Program
     {
         static void Main(string[] args)
@@ -62,12 +79,26 @@ namespace LuokkaHarjoitus1
             // Call the SayOpinion method
             owner.SayOpinion();
 
-            // Keep the window open until enter press
-
+            //Save owners name property to a variable
             string who = owner.name;
+
+            // Test it by echoing it to a console
             Console.WriteLine("totesi " + who);
 
+        
+            // Create a new catowner object
+            CatOwner catowner = new CatOwner();
+
+            // Use catowners SayOpinion method
+            catowner.SayOpinion();
+
+            // Keep the window open until enter press
             Console.ReadLine();
+
+
         }
+
+
+
     }
 }
