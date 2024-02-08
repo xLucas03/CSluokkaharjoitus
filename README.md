@@ -46,7 +46,7 @@ Perinteisesti metodin ylikirjoittaminen aliluokassa on määritelty käyttämäl
 ## Tehtävä 2
 Tee yliluokka `Pet` ja sille aliluokka `Hare`. Määrittele metodi `Eats`, joka tulostaa ruudulle eläimen ruokavalion. `Pet` -luokassa tyyliin "Syö ruokaa" ja aliluokassa "Syö porkkanoita". Käytä perinteistä määrittelyä virtuaaliseksi metodiksi ja ylikirjoitettavaksi metodiksi.
 
-### Tehtävä 3 
+## Tehtävä 3 
 Luo uusi sovellus (solution) ja projekti. Asetukset `C#`, `Windows` -alustalle ja `Console` -sovellustyypiksi. Sovelluksen avulla kerätään tietoa tietoteknisistä laitteista. Kaikille laitteille yhteisiä ominaisuuksia ovat:
 
 1. hankintapäivä (string)
