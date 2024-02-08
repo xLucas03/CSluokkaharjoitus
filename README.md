@@ -53,4 +53,6 @@ Luo uusi sovellus (solution) ja projekti. Asetukset `C#`, `Windows` -alustalle j
 2. Hankintahinta (double)
 3. Takuuaika kuukausina (int)
 
-Kiinnostuksen kohteena tietokoneet, puhelimet ja tabletit. Rakenna näille luokkamääritykset ja periytä yhteiset ominaisuudet yliluokasta. Muista kommentoida koodia. Mieti mitä metodeja tarvittaisiin esim. Jäljellä olevan takuuajan selvittämiseksi.
+Kiinnostuksen kohteena tietokoneet, puhelimet ja tabletit. Rakenna näille luokkamääritykset ja periytä yhteiset ominaisuudet yliluokasta. Muista kommentoida koodia. Mieti mitä metodeja tarvittaisiin esim. Jäljellä olevan takuuajan selvittämiseksi. Mieti mitä eroja tietokoneilla ja muilla laitetyypeillä on. Tee tietokoneille, puhelimille ja tableteille omat luokat ja mieti, mitä kenttiä aliluokissa pitäisi olla. 
+
+Tee tätä tehtävää varten oma Github-repositorio Laiterekisteri. Ota se käyttöön Visual Studiossa, jotta voit versioida kirjoittamaasi koodia. 
